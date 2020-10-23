@@ -5,7 +5,7 @@
  * @package easy-footnotes
  */
 
-$footnoteOptions = get_option( 'easy_footnotes_options' );
+$footnoteOptions = get_option( 'easy_footnotes_options', array() );
 
 if ( isset( $_POST['easy_footnote_hidden'] ) ) {
 	// Check the nonce for the Reading Time.
