@@ -235,7 +235,7 @@ class easyFootnotes {
 	}
 
 	/**
-	 * Function for enqueuring EAsy Footnotes admin scripts.
+	 * Function for enqueuring Easy Footnotes admin scripts.
 	 */
 	public function easy_footnotes_admin_scripts() {
 		wp_enqueue_style( 'easy-footnotes-admin-styles', plugins_url( '/assets/easy-footnotes-admin.css', __FILE__ ), '', '1.0.13' );
