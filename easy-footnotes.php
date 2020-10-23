@@ -71,11 +71,41 @@ class easyFootnotes {
 	 * Registering the scripts and styles used by jQuery qTip.
 	 */
 	public function register_qtip_scripts() {
-		wp_register_script( 'imagesloaded', plugins_url( '/assets/qtip/imagesloaded.pkgd.min.js', __FILE__ ), array(), '3.1.8', true );
-		wp_register_script( 'qtip', plugins_url( '/assets/qtip/jquery.qtip.min.js', __FILE__ ), array( 'jquery', 'imagesloaded' ), '3.0.3', true );
-		wp_register_script( 'qtipcall', plugins_url( '/assets/qtip/jquery.qtipcall.js', __FILE__ ), array( 'jquery', 'qtip' ), '1.1.0', true );
-		wp_register_style( 'qtipstyles', plugins_url( '/assets/qtip/jquery.qtip.min.css', __FILE__ ), array(), '3.0.3', false );
-		wp_register_style( 'easyfootnotescss', plugins_url( '/assets/easy-footnotes.css', __FILE__ ), array(), '1.1.0', false );
+		wp_register_script( 
+			'imagesloaded', 
+			plugins_url( '/assets/qtip/imagesloaded.pkgd.min.js', __FILE__ ),
+			array(),
+			'3.1.8', 
+			true
+		);
+		wp_register_script( 
+			'qtip', 
+			plugins_url( '/assets/qtip/jquery.qtip.min.js', __FILE__ ),
+			array( 'jquery', 'imagesloaded' ),
+			'3.0.3', 
+			true 
+		);
+		wp_register_script( 
+			'qtipcall', 
+			plugins_url( '/assets/qtip/jquery.qtipcall.js', __FILE__ ), 
+			array( 'jquery', 'qtip' ), 
+			'1.1.0', 
+			true
+		);
+		wp_register_style( 
+			'qtipstyles', 
+			plugins_url( '/assets/qtip/jquery.qtip.min.css', __FILE__ ),
+			array(),
+			'3.0.3', 
+			false 
+		);
+		wp_register_style( 
+			'easyfootnotescss', 
+			plugins_url( '/assets/easy-footnotes.css', __FILE__ ), 
+			array(),
+			'1.1.0', 
+			false 
+		);
 	}
 
 	/**
